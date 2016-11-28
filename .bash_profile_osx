@@ -1,0 +1,10 @@
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+alias ipcalc="/Applications/./ipcalc.py -n -b"
+alias ll="ls -la"
+alias sshx="ssh -X"
+alias makecs=makefunc
+makefunc()
+{
+    file_name=$1
+   gcc -g $file_name.c -o $file_name -lcs50 -lm
+}
